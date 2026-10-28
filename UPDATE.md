@@ -7,21 +7,30 @@
 
 ## 1. TỔNG QUAN PHIÊN LÀM VIỆC HIỆN TẠI (CURRENT STATE)
 
-* **Giai đoạn hiện tại (Current Phase)**: `PUSHED — RELEASED READY 1.0, CI đang chạy`
-* **Task đang thực hiện (In-Progress Task)**: `Chờ GitHub Actions xanh → tag v1.0.0 / deploy Vercel`
+* **Giai đoạn hiện tại (Current Phase)**: `PUSHED — CI GREEN — READY FOR v1.0.0 TAG`
+* **Task đang thực hiện (In-Progress Task)**: `Chờ tag v1.0.0 / deploy Vercel`
 * **Trạng thái Build & Test gần nhất**:
-  * TypeScript Typecheck: `PASS — exit 0`
+  * TypeScript Typecheck: `PASS — exit 0 (next typegen + tsc)`
   * ESLint: `PASS — exit 0 (0 error, 0 warning)`
   * Vitest Suite: `PASS — 6 files / 59 tests, exit 0`
   * Next.js Build: `PASS — exit 0 (local standalone mặc định, Docker static export)`
   * Docker: `PASS — static image healthy, 20.7 MB compressed`
-  * GitHub: `PUSHED main → origin/main (public), CI run in_progress`
+  * GitHub Actions: `PASS — CI run a6660ac (lint/typecheck/test/build)`
 * **Môi trường**: Next.js 16.4.3 App Router (TypeScript strict, Tailwind CSS v4, shadcn/ui base-nova trên Base UI, React 19.3, Node >= 22)
 * **Trạng thái Zero-Server**: `PASS — 0 API route, 0 fetch/XHR, 16 static GET, 0 POST/PUT`
 
 ---
 
 ## 2. NHẬT KÝ THỰC THI (EXECUTION LOG - MỚI NHẤT LÊN ĐẦU)
+
+### [2026-10-28 22:40] - CI FIX · `next typegen` trước typecheck
+* **Người thực hiện / Agent**: Implementation Agent (DeepSeek V4.1 Flash).
+* **Vấn đề**: CI đầu tiên (`8308535`) fail ở bước Typecheck. Nguyên nhân: `next-env.d.ts` bị ignore theo docs Next 16, nên clean clone không có file này và `LayoutProps` chưa được sinh; local pass vì file đã tồn tại.
+* **Tái hiện**: worktree sạch + junction `node_modules`, chạy `npx tsc --noEmit` → `src/app/layout.tsx(22,50): error TS2304: Cannot find name 'LayoutProps'`.
+* **Sửa**: đổi script `typecheck` thành `next typegen && tsc --noEmit` trong `package.json`. `next typegen` tạo route types/`next-env.d.ts` trước khi tsc; đã test trong worktree sạch → exit 0.
+* **Commit/push**: `a6660ac fix(ci): generate Next route types before typecheck`.
+* **Kết quả**: GitHub Actions run `a6660ac` → **success** toàn bộ: Install → Lint → Typecheck → Unit tests → Production build.
+* **Việc tiếp theo**: tag `v1.0.0`, deploy Vercel/Docker smoke test.
 
 ### [2026-10-28 22:35] - RELEASE · Kiểm tra .gitignore, commit từng nhóm và push GitHub
 * **Người thực hiện / Agent**: Implementation Agent (DeepSeek V4.1 Flash).
