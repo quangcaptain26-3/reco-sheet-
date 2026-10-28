@@ -1,0 +1,624 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-28T15:08:13.719Z",
+  "title": "Design System: RecoSheet",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(1 0 0)",
+        "tonalRamp": [
+          "oklch(0.145 0 0)",
+          "oklch(0.205 0 0)",
+          "oklch(0.269 0 0)",
+          "oklch(0.371 0 0)",
+          "oklch(0.439 0 0)",
+          "oklch(0.556 0 0)",
+          "oklch(0.708 0 0)",
+          "oklch(0.922 0 0)"
+        ],
+        "purpose": "Page and card field."
+      },
+      "paper-dim": {
+        "role": "neutral",
+        "displayName": "Dim Paper",
+        "canonical": "oklch(0.97 0 0)",
+        "tonalRamp": [
+          "oklch(0.145 0 0)",
+          "oklch(0.205 0 0)",
+          "oklch(0.269 0 0)",
+          "oklch(0.371 0 0)",
+          "oklch(0.439 0 0)",
+          "oklch(0.556 0 0)",
+          "oklch(0.708 0 0)",
+          "oklch(0.922 0 0)"
+        ],
+        "purpose": "Segmented-control track, toggle off-state, muted chips."
+      },
+      "paper-soft": {
+        "role": "neutral",
+        "displayName": "Soft Paper",
+        "canonical": "oklch(0.985 0 0)",
+        "tonalRamp": [
+          "oklch(0.145 0 0)",
+          "oklch(0.205 0 0)",
+          "oklch(0.269 0 0)",
+          "oklch(0.371 0 0)",
+          "oklch(0.439 0 0)",
+          "oklch(0.556 0 0)",
+          "oklch(0.708 0 0)",
+          "oklch(0.922 0 0)"
+        ],
+        "purpose": "Text on near-black fills; lightest neutral step."
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(0.145 0 0)",
+        "tonalRamp": [
+          "oklch(0.145 0 0)",
+          "oklch(0.205 0 0)",
+          "oklch(0.269 0 0)",
+          "oklch(0.371 0 0)",
+          "oklch(0.439 0 0)",
+          "oklch(0.556 0 0)",
+          "oklch(0.708 0 0)",
+          "oklch(0.922 0 0)"
+        ],
+        "purpose": "Body and heading text, table headers, header brand square, active step marker."
+      },
+      "ink-strong": {
+        "role": "neutral",
+        "displayName": "Strong Ink",
+        "canonical": "oklch(0.205 0 0)",
+        "tonalRamp": [
+          "oklch(0.145 0 0)",
+          "oklch(0.205 0 0)",
+          "oklch(0.269 0 0)",
+          "oklch(0.371 0 0)",
+          "oklch(0.439 0 0)",
+          "oklch(0.556 0 0)",
+          "oklch(0.708 0 0)",
+          "oklch(0.922 0 0)"
+        ],
+        "purpose": "Primary button fill only, one step softer than ink."
+      },
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "oklch(0.556 0 0)",
+        "tonalRamp": [
+          "oklch(0.145 0 0)",
+          "oklch(0.205 0 0)",
+          "oklch(0.269 0 0)",
+          "oklch(0.371 0 0)",
+          "oklch(0.439 0 0)",
+          "oklch(0.556 0 0)",
+          "oklch(0.708 0 0)",
+          "oklch(0.922 0 0)"
+        ],
+        "purpose": "Secondary text: hints, metadata, row numbers."
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(0.922 0 0)",
+        "tonalRamp": [
+          "oklch(0.145 0 0)",
+          "oklch(0.205 0 0)",
+          "oklch(0.269 0 0)",
+          "oklch(0.371 0 0)",
+          "oklch(0.439 0 0)",
+          "oklch(0.556 0 0)",
+          "oklch(0.708 0 0)",
+          "oklch(0.922 0 0)"
+        ],
+        "purpose": "Every 1px rule, ring, input border, divider."
+      },
+      "focus-ring": {
+        "role": "neutral",
+        "displayName": "Focus Ring",
+        "canonical": "oklch(0.708 0 0)",
+        "tonalRamp": [
+          "oklch(0.145 0 0)",
+          "oklch(0.205 0 0)",
+          "oklch(0.269 0 0)",
+          "oklch(0.371 0 0)",
+          "oklch(0.439 0 0)",
+          "oklch(0.556 0 0)",
+          "oklch(0.708 0 0)",
+          "oklch(0.922 0 0)"
+        ],
+        "purpose": "3px keyboard focus ring at 50% alpha."
+      },
+      "scrim": {
+        "role": "neutral",
+        "displayName": "Modal Scrim",
+        "canonical": "oklch(0.129 0.042 264.695)",
+        "tonalRamp": [
+          "oklch(0.145 0 0)",
+          "oklch(0.205 0 0)",
+          "oklch(0.269 0 0)",
+          "oklch(0.371 0 0)",
+          "oklch(0.439 0 0)",
+          "oklch(0.556 0 0)",
+          "oklch(0.708 0 0)",
+          "oklch(0.922 0 0)"
+        ],
+        "purpose": "Preview modal backdrop at 45% alpha with 2px blur."
+      },
+      "verify": {
+        "role": "primary",
+        "displayName": "Verification Green",
+        "canonical": "oklch(0.596 0.145 163.225)",
+        "tonalRamp": [
+          "oklch(0.262 0.051 172.552)",
+          "oklch(0.378 0.077 168.94)",
+          "oklch(0.432 0.095 166.913)",
+          "oklch(0.508 0.118 165.612)",
+          "oklch(0.596 0.145 163.225)",
+          "oklch(0.845 0.143 164.978)",
+          "oklch(0.95 0.052 163.051)",
+          "oklch(0.979 0.021 166.113)"
+        ],
+        "purpose": "Trust and completion: privacy promise, done steps, matched results, switch on-state."
+      },
+      "verify-strong": {
+        "role": "primary",
+        "displayName": "Deep Verification",
+        "canonical": "oklch(0.508 0.118 165.612)",
+        "tonalRamp": [
+          "oklch(0.262 0.051 172.552)",
+          "oklch(0.378 0.077 168.94)",
+          "oklch(0.432 0.095 166.913)",
+          "oklch(0.508 0.118 165.612)",
+          "oklch(0.596 0.145 163.225)",
+          "oklch(0.845 0.143 164.978)",
+          "oklch(0.95 0.052 163.051)",
+          "oklch(0.979 0.021 166.113)"
+        ],
+        "purpose": "Export button fill, enabled switch track."
+      },
+      "verify-deep": {
+        "role": "primary",
+        "displayName": "Verification Ink",
+        "canonical": "oklch(0.432 0.095 166.913)",
+        "tonalRamp": [
+          "oklch(0.262 0.051 172.552)",
+          "oklch(0.378 0.077 168.94)",
+          "oklch(0.432 0.095 166.913)",
+          "oklch(0.508 0.118 165.612)",
+          "oklch(0.596 0.145 163.225)",
+          "oklch(0.845 0.143 164.978)",
+          "oklch(0.95 0.052 163.051)",
+          "oklch(0.979 0.021 166.113)"
+        ],
+        "purpose": "Text on green washes: header pill, loaded-badge label."
+      },
+      "verify-wash": {
+        "role": "primary",
+        "displayName": "Verification Wash",
+        "canonical": "oklch(0.979 0.021 166.113)",
+        "tonalRamp": [
+          "oklch(0.262 0.051 172.552)",
+          "oklch(0.378 0.077 168.94)",
+          "oklch(0.432 0.095 166.913)",
+          "oklch(0.508 0.118 165.612)",
+          "oklch(0.596 0.145 163.225)",
+          "oklch(0.845 0.143 164.978)",
+          "oklch(0.95 0.052 163.051)",
+          "oklch(0.979 0.021 166.113)"
+        ],
+        "purpose": "Privacy notice field, success alerts, matched KPI ground."
+      },
+      "verify-line": {
+        "role": "primary",
+        "displayName": "Verification Line",
+        "canonical": "oklch(0.905 0.093 164.15)",
+        "tonalRamp": [
+          "oklch(0.262 0.051 172.552)",
+          "oklch(0.378 0.077 168.94)",
+          "oklch(0.432 0.095 166.913)",
+          "oklch(0.508 0.118 165.612)",
+          "oklch(0.596 0.145 163.225)",
+          "oklch(0.845 0.143 164.978)",
+          "oklch(0.95 0.052 163.051)",
+          "oklch(0.979 0.021 166.113)"
+        ],
+        "purpose": "Hairline around green washes and matched badges."
+      },
+      "compare": {
+        "role": "secondary",
+        "displayName": "Comparison Blue",
+        "canonical": "oklch(0.5 0.134 242.749)",
+        "tonalRamp": [
+          "oklch(0.391 0.09 240.876)",
+          "oklch(0.443 0.11 240.79)",
+          "oklch(0.5 0.134 242.749)",
+          "oklch(0.588 0.158 241.966)",
+          "oklch(0.746 0.16 232.661)",
+          "oklch(0.901 0.058 230.902)",
+          "oklch(0.951 0.026 236.824)",
+          "oklch(0.977 0.013 236.62)"
+        ],
+        "purpose": "File B only: B dropzone accent, only-in-B badge, rows and KPI."
+      },
+      "compare-wash": {
+        "role": "secondary",
+        "displayName": "Comparison Wash",
+        "canonical": "oklch(0.977 0.013 236.62)",
+        "tonalRamp": [
+          "oklch(0.391 0.09 240.876)",
+          "oklch(0.443 0.11 240.79)",
+          "oklch(0.5 0.134 242.749)",
+          "oklch(0.588 0.158 241.966)",
+          "oklch(0.746 0.16 232.661)",
+          "oklch(0.901 0.058 230.902)",
+          "oklch(0.951 0.026 236.824)",
+          "oklch(0.977 0.013 236.62)"
+        ],
+        "purpose": "Only-in-B row tint and KPI ground."
+      },
+      "compare-line": {
+        "role": "secondary",
+        "displayName": "Comparison Line",
+        "canonical": "oklch(0.901 0.058 230.902)",
+        "tonalRamp": [
+          "oklch(0.391 0.09 240.876)",
+          "oklch(0.443 0.11 240.79)",
+          "oklch(0.5 0.134 242.749)",
+          "oklch(0.588 0.158 241.966)",
+          "oklch(0.746 0.16 232.661)",
+          "oklch(0.901 0.058 230.902)",
+          "oklch(0.951 0.026 236.824)",
+          "oklch(0.977 0.013 236.62)"
+        ],
+        "purpose": "Hairline around blue washes and badges."
+      },
+      "caution": {
+        "role": "tertiary",
+        "displayName": "Caution Amber",
+        "canonical": "oklch(0.555 0.163 48.998)",
+        "tonalRamp": [
+          "oklch(0.414 0.112 45.904)",
+          "oklch(0.473 0.137 46.201)",
+          "oklch(0.555 0.163 48.998)",
+          "oklch(0.666 0.179 58.318)",
+          "oklch(0.828 0.189 84.429)",
+          "oklch(0.924 0.12 95.746)",
+          "oklch(0.962 0.059 95.617)",
+          "oklch(0.987 0.022 95.277)"
+        ],
+        "purpose": "Value discrepancy: amber rows, Δ badges, warning alerts, Δ footnote."
+      },
+      "caution-wash": {
+        "role": "tertiary",
+        "displayName": "Caution Wash",
+        "canonical": "oklch(0.987 0.022 95.277)",
+        "tonalRamp": [
+          "oklch(0.414 0.112 45.904)",
+          "oklch(0.473 0.137 46.201)",
+          "oklch(0.555 0.163 48.998)",
+          "oklch(0.666 0.179 58.318)",
+          "oklch(0.828 0.189 84.429)",
+          "oklch(0.924 0.12 95.746)",
+          "oklch(0.962 0.059 95.617)",
+          "oklch(0.987 0.022 95.277)"
+        ],
+        "purpose": "Discrepancy row tint and warning ground."
+      },
+      "caution-line": {
+        "role": "tertiary",
+        "displayName": "Caution Line",
+        "canonical": "oklch(0.924 0.12 95.746)",
+        "tonalRamp": [
+          "oklch(0.414 0.112 45.904)",
+          "oklch(0.473 0.137 46.201)",
+          "oklch(0.555 0.163 48.998)",
+          "oklch(0.666 0.179 58.318)",
+          "oklch(0.828 0.189 84.429)",
+          "oklch(0.924 0.12 95.746)",
+          "oklch(0.962 0.059 95.617)",
+          "oklch(0.987 0.022 95.277)"
+        ],
+        "purpose": "Hairline keeping amber rows legible on white."
+      },
+      "alarm": {
+        "role": "destructive",
+        "displayName": "Alarm Rose",
+        "canonical": "oklch(0.514 0.222 16.935)",
+        "tonalRamp": [
+          "oklch(0.41 0.159 10.272)",
+          "oklch(0.455 0.188 13.697)",
+          "oklch(0.514 0.222 16.935)",
+          "oklch(0.586 0.253 17.585)",
+          "oklch(0.712 0.194 13.428)",
+          "oklch(0.892 0.058 10.001)",
+          "oklch(0.941 0.03 12.58)",
+          "oklch(0.969 0.015 12.422)"
+        ],
+        "purpose": "Missing-from-B codes and values, plus error states."
+      },
+      "alarm-wash": {
+        "role": "destructive",
+        "displayName": "Alarm Wash",
+        "canonical": "oklch(0.969 0.015 12.422)",
+        "tonalRamp": [
+          "oklch(0.41 0.159 10.272)",
+          "oklch(0.455 0.188 13.697)",
+          "oklch(0.514 0.222 16.935)",
+          "oklch(0.586 0.253 17.585)",
+          "oklch(0.712 0.194 13.428)",
+          "oklch(0.892 0.058 10.001)",
+          "oklch(0.941 0.03 12.58)",
+          "oklch(0.969 0.015 12.422)"
+        ],
+        "purpose": "Only-in-A row tint and error alert ground."
+      },
+      "alarm-line": {
+        "role": "destructive",
+        "displayName": "Alarm Line",
+        "canonical": "oklch(0.892 0.058 10.001)",
+        "tonalRamp": [
+          "oklch(0.41 0.159 10.272)",
+          "oklch(0.455 0.188 13.697)",
+          "oklch(0.514 0.222 16.935)",
+          "oklch(0.586 0.253 17.585)",
+          "oklch(0.712 0.194 13.428)",
+          "oklch(0.892 0.058 10.001)",
+          "oklch(0.941 0.03 12.58)",
+          "oklch(0.969 0.015 12.422)"
+        ],
+        "purpose": "Hairline around rose washes and badges."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The single hero sentence, `sm` and up."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Hero on narrow viewports and future page titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Step headings, result panel titles, card titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Descriptions, hints in prose, table cells."
+      },
+      "support": {
+        "displayName": "Support",
+        "purpose": "Step descriptions, field groups, and secondary explanations between body and label."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Metadata, hints, KPI captions, footer, safety notes."
+      },
+      "metric": {
+        "displayName": "Metric",
+        "purpose": "The four KPI values; tabular and scannable."
+      },
+      "code": {
+        "displayName": "Code",
+        "purpose": "Reserved for raw identifiers shown next to cleaned keys."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-whisper",
+        "value": "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+        "purpose": "Cards and dropzones at rest; keeps white-on-white edges from dissolving."
+      },
+      {
+        "name": "popover-lift",
+        "value": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+        "purpose": "Select popovers only."
+      },
+      {
+        "name": "modal-float",
+        "value": "0 25px 50px -12px rgb(0 0 0 / 0.25)",
+        "purpose": "The preview dialog, paired with the scrim."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Colour, border, and background shifts on hover and focus."
+      },
+      {
+        "name": "popover-open",
+        "value": "100ms ease-out",
+        "purpose": "Select popover fade and zoom."
+      },
+      {
+        "name": "result-reveal",
+        "value": "smooth scroll, 100ms delay",
+        "purpose": "Brings the results section into view after a run completes."
+      },
+      {
+        "name": "spinner",
+        "value": "1s linear infinite",
+        "purpose": "Parsing and export progress icons."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The default near-black action, used for 'Bắt đầu đối soát'.",
+      "html": "<button class='ds-btn-primary'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M5 12h14'/><path d='m12 5 7 7-7 7'/></svg>Bắt đầu đối soát</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 6px; height: 32px; padding: 0 10px; border: 1px solid transparent; border-radius: 10px; background: var(--primary, oklch(0.205 0 0)); color: var(--primary-foreground, oklch(0.985 0 0)); font-family: 'Geist', ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 500; line-height: 1; white-space: nowrap; cursor: pointer; transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1); outline: none; } .ds-btn-primary:hover { background: color-mix(in oklch, var(--primary, oklch(0.205 0 0)) 80%, transparent); } .ds-btn-primary:active { transform: translateY(1px); } .ds-btn-primary:focus-visible { border-color: var(--ring, oklch(0.708 0 0)); box-shadow: 0 0 0 3px oklch(0.708 0 0 / 0.5); } .ds-btn-primary:disabled { opacity: 0.5; pointer-events: none; }"
+    },
+    {
+      "name": "Export Button",
+      "kind": "button",
+      "refersTo": "button-export",
+      "description": "The single green call to action: build the Excel report.",
+      "html": "<button class='ds-btn-export'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4'/><polyline points='7 10 12 15 17 10'/><line x1='12' x2='12' y1='15' y2='3'/></svg>Tải báo cáo Excel</button>",
+      "css": ".ds-btn-export { display: inline-flex; align-items: center; justify-content: center; gap: 6px; height: 36px; padding: 0 10px; border: 1px solid transparent; border-radius: 10px; background: oklch(0.508 0.118 165.612); color: oklch(1 0 0); font-family: 'Geist', ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 500; line-height: 1; white-space: nowrap; cursor: pointer; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-export:hover { background: oklch(0.432 0.095 166.913); } .ds-btn-export:active { transform: translateY(1px); } .ds-btn-export:focus-visible { box-shadow: 0 0 0 3px oklch(0.708 0 0 / 0.5); outline: none; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action such as 'Đối soát lại' or table pagination.",
+      "html": "<button class='ds-btn-outline'>Đối soát lại</button>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: 6px; height: 32px; padding: 0 10px; border: 1px solid var(--border, oklch(0.922 0 0)); border-radius: 10px; background: var(--background, oklch(1 0 0)); color: var(--foreground, oklch(0.145 0 0)); font-family: 'Geist', ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 500; line-height: 1; white-space: nowrap; cursor: pointer; transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-outline:hover { background: var(--muted, oklch(0.97 0 0)); } .ds-btn-outline:active { transform: translateY(1px); } .ds-btn-outline:focus-visible { border-color: var(--ring, oklch(0.708 0 0)); box-shadow: 0 0 0 3px oklch(0.708 0 0 / 0.5); outline: none; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Search, tolerance, and number fields on a 32px shell.",
+      "html": "<input class='ds-input' type='text' placeholder='Tìm nhanh theo mã đơn…' aria-label='Tìm kiếm trong bảng kết quả' />",
+      "css": ".ds-input { height: 32px; width: 100%; padding: 4px 10px; border: 1px solid var(--input, oklch(0.922 0 0)); border-radius: 10px; background: var(--background, oklch(1 0 0)); color: var(--foreground, oklch(0.145 0 0)); font-family: 'Geist', ui-sans-serif, system-ui, sans-serif; font-size: 14px; line-height: 1.5; outline: none; transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-input::placeholder { color: var(--muted-foreground, oklch(0.556 0 0)); } .ds-input:focus-visible { border-color: var(--ring, oklch(0.708 0 0)); box-shadow: 0 0 0 3px oklch(0.708 0 0 / 0.5); } .ds-input[aria-invalid='true'] { border-color: oklch(0.577 0.245 27.325); box-shadow: 0 0 0 3px oklch(0.577 0.245 27.325 / 0.2); }"
+    },
+    {
+      "name": "Select Trigger",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Column picker shell; mirrors the input with a trailing chevron.",
+      "html": "<button class='ds-select' type='button' aria-haspopup='listbox'><span>Mã đơn</span><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='m6 9 6 6 6-6'/></svg></button>",
+      "css": ".ds-select { display: flex; align-items: center; justify-content: space-between; gap: 6px; height: 32px; width: 100%; padding: 0 8px 0 10px; border: 1px solid var(--input, oklch(0.922 0 0)); border-radius: 10px; background: var(--background, oklch(1 0 0)); color: var(--foreground, oklch(0.145 0 0)); font-family: 'Geist', ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 400; cursor: pointer; outline: none; transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-select svg { color: var(--muted-foreground, oklch(0.556 0 0)); flex-shrink: 0; } .ds-select:hover { border-color: oklch(0.708 0 0); } .ds-select:focus-visible { border-color: var(--ring, oklch(0.708 0 0)); box-shadow: 0 0 0 3px oklch(0.708 0 0 / 0.5); }"
+    },
+    {
+      "name": "Step Heading",
+      "kind": "custom",
+      "description": "Numbered work-order heading whose circular marker carries done / active / idle state.",
+      "html": "<div class='ds-step'><span class='ds-step-mark'>1</span><div class='ds-step-text'><h2 class='ds-step-title'>Tải hai bảng tính</h2><p class='ds-step-desc'>Tệp A là nguồn đối chiếu (sổ quỹ, đơn xuất kho). Tệp B là nguồn so sánh (sao kê, báo cáo đối tác).</p></div></div>",
+      "css": ".ds-step { display: flex; align-items: flex-start; gap: 12px; font-family: 'Geist', ui-sans-serif, system-ui, sans-serif; } .ds-step-mark { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; flex-shrink: 0; margin-top: 2px; border-radius: 9999px; background: var(--foreground, oklch(0.145 0 0)); color: var(--background, oklch(1 0 0)); font-size: 14px; font-weight: 600; box-shadow: 0 0 0 1px oklch(0.145 0 0 / 0.2); } .ds-step-text { min-width: 0; } .ds-step-title { margin: 0; font-size: 16px; font-weight: 600; letter-spacing: -0.025em; line-height: 1.375; } .ds-step-desc { margin: 2px 0 0; font-size: 13px; line-height: 1.625; color: var(--muted-foreground, oklch(0.556 0 0)); }"
+    },
+    {
+      "name": "Dropzone Card",
+      "kind": "card",
+      "description": "File intake target: dashed edge, role-tinted icon well, green privacy line.",
+      "html": "<div class='ds-drop'><div class='ds-drop-top'><span class='ds-drop-badge'>Tệp A</span><span class='ds-drop-role'>Nguồn đối chiếu</span></div><button class='ds-drop-target' type='button'><span class='ds-drop-icon'><svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='M12 13v8'/><path d='M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242'/><path d='m8 17 4-4 4 4'/></svg></span><span class='ds-drop-label'>Kéo thả tệp vào đây hoặc bấm để chọn</span><span class='ds-drop-meta'>.xlsx, .xls, .csv · tối đa 10MB</span><span class='ds-drop-lock'><svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><rect width='18' height='11' x='3' y='11' rx='2' ry='2'/><path d='M7 11V7a5 5 0 0 1 10 0v4'/></svg>Không upload lên máy chủ</span></button></div>",
+      "css": ".ds-drop { overflow: hidden; border-radius: 14px; background: var(--card, oklch(1 0 0)); box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1), 0 0 0 1px oklch(0.922 0 0 / 0.7); font-family: 'Geist', ui-sans-serif, system-ui, sans-serif; } .ds-drop-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 16px; border-bottom: 1px solid oklch(0.922 0 0 / 0.6); background: oklch(0.97 0 0 / 0.2); } .ds-drop-badge { display: inline-flex; align-items: center; height: 20px; padding: 0 8px; border-radius: 26px; background: oklch(0.95 0.052 163.051); color: oklch(0.432 0.095 166.913); box-shadow: inset 0 0 0 1px oklch(0.905 0.093 164.15); font-size: 12px; font-weight: 500; } .ds-drop-role { font-size: 11px; font-weight: 500; color: var(--muted-foreground, oklch(0.556 0 0)); } .ds-drop-target { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; width: calc(100% - 32px); min-height: 172px; margin: 16px; padding: 24px 16px; border: 1px dashed var(--border, oklch(0.922 0 0)); border-radius: 14px; background: oklch(1 0 0 / 0.6); text-align: center; cursor: pointer; transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-drop-target:hover { border-color: oklch(0.773 0.152 162.479); } .ds-drop-target:focus-visible { outline: none; box-shadow: 0 0 0 2px oklch(0.708 0 0 / 0.4); } .ds-drop-icon { display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 9999px; background: oklch(0.979 0.021 166.113); color: oklch(0.596 0.145 163.225); } .ds-drop-label { font-size: 14px; font-weight: 500; color: var(--foreground, oklch(0.145 0 0)); } .ds-drop-meta { font-size: 11px; color: var(--muted-foreground, oklch(0.556 0 0)); } .ds-drop-lock { display: inline-flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 500; color: oklch(0.508 0.118 165.612); }"
+    },
+    {
+      "name": "Step Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "The page's primary container: paper surface, hairline ring, bordered header strip.",
+      "html": "<div class='ds-card'><div class='ds-card-head'><div><h3 class='ds-card-title'>Thiết lập quy tắc đối soát</h3><p class='ds-card-desc'>Chọn cột định danh và cột giá trị tương ứng.</p></div><span class='ds-card-pill'>Đã tải đủ 2 tệp</span></div><div class='ds-card-body'>Bật làm sạch thông minh để xử lý khoảng trắng ẩn và hoa/thường.</div></div>",
+      "css": ".ds-card { overflow: hidden; border-radius: 14px; background: var(--card, oklch(1 0 0)); color: var(--card-foreground, oklch(0.145 0 0)); box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1), 0 0 0 1px oklch(0.922 0 0 / 0.7); font-family: 'Geist', ui-sans-serif, system-ui, sans-serif; } .ds-card-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 16px 20px; border-bottom: 1px solid oklch(0.922 0 0 / 0.6); } .ds-card-title { margin: 0; font-size: 16px; font-weight: 600; letter-spacing: -0.025em; } .ds-card-desc { margin: 2px 0 0; font-size: 13px; line-height: 1.625; color: var(--muted-foreground, oklch(0.556 0 0)); } .ds-card-pill { display: inline-flex; align-items: center; height: 20px; padding: 0 8px; border-radius: 26px; background: oklch(0.979 0.021 166.113); color: oklch(0.508 0.118 165.612); box-shadow: inset 0 0 0 1px oklch(0.905 0.093 164.15); font-size: 12px; font-weight: 500; white-space: nowrap; } .ds-card-body { padding: 20px; font-size: 14px; line-height: 1.625; }"
+    },
+    {
+      "name": "Status Badge",
+      "kind": "chip",
+      "refersTo": "badge-pill",
+      "description": "20px pill carrying a result status; tinted wash, hairline ring, no border.",
+      "html": "<span class='ds-badge ds-badge-matched'>Khớp</span>",
+      "css": ".ds-badge { display: inline-flex; align-items: center; justify-content: center; height: 20px; padding: 0 8px; border: 1px solid transparent; border-radius: 26px; font-family: 'Geist', ui-sans-serif, system-ui, sans-serif; font-size: 12px; font-weight: 500; line-height: 1; white-space: nowrap; } .ds-badge-matched { background: oklch(0.979 0.021 166.113); color: oklch(0.508 0.118 165.612); box-shadow: inset 0 0 0 1px oklch(0.905 0.093 164.15); }"
+    },
+    {
+      "name": "Inline Alert",
+      "kind": "custom",
+      "description": "Warning/error/info/success panel with a leading status icon.",
+      "html": "<div class='ds-alert ds-alert-warning' role='alert'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' aria-hidden='true'><path d='m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3'/><path d='M12 9v4'/><path d='M12 17h.01'/></svg><div><p class='ds-alert-title'>Phát hiện mã trùng lặp</p><p class='ds-alert-body'>Hệ thống vẫn chạy bình thường và ghép từng cặp theo thứ tự xuất hiện.</p></div></div>",
+      "css": ".ds-alert { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border: 1px solid oklch(0.924 0.12 95.746); border-radius: 10px; background: oklch(0.987 0.022 95.277); color: oklch(0.414 0.112 45.904); font-family: 'Geist', ui-sans-serif, system-ui, sans-serif; } .ds-alert svg { flex-shrink: 0; margin-top: 2px; color: oklch(0.666 0.179 58.318); } .ds-alert-title { margin: 0; font-size: 14px; font-weight: 500; } .ds-alert-body { margin: 2px 0 0; font-size: 13px; line-height: 1.625; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Reconciliation Desk",
+    "overview": "A tidy accountant's desk an hour before close: paper-white surfaces squared to the edge of the table, a faint ruled grid underneath, and one green stamp that only lands on something already verified. Nothing on the desk is there to look impressive. It is there because the work needs it.\n\nThe surface behaves like an instrument, not a landing page. Structure is drawn with hairlines and tonal paper, not with shadow or colour; colour is a label on an outcome, never an atmosphere. The one moment of expressive restraint is the hero: a 32px grid behind the top of the page that fades out before the first card, the visual equivalent of graph paper under a clean form.\n\nDensity is that of a working document rather than a marketing site: 14px body, 11px metadata, 32px controls, 20px rhythm. Vietnamese copy gets room to breathe because Vietnamese is longer and taller than English at the same point size. Motion is limited to state change — a colour shift, a 100ms popover, a spinner — because the thing that should feel fast is the reconciliation, not the interface.",
+    "keyCharacteristics": [
+      "Paper-white and grayscale structure; exactly one green that means \"verified\".",
+      "Depth from hairline rings and low-alpha tonal washes, not from cast shadows.",
+      "A fixed four-signal vocabulary: green = matched/safe, amber = value discrepancy, rose = missing from A, sky = missing from B.",
+      "Numerals are the content: right-aligned, tabular, signed, never abbreviated into vagueness.",
+      "The page is a numbered, three-step work order — files, rules, results — never a dashboard of unrelated widgets.",
+      "Vietnamese-first typography and copy; no English chrome, no emoji, no decorative illustration."
+    ],
+    "rules": [
+      {
+        "name": "The One Stamp Rule",
+        "body": "Green is evidence, not decoration. It may cover no more than roughly a tenth of any viewport, and only where the product is asserting safety, completion, or the export handoff. A green panel that is not one of those three things is a bug.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Files Rule",
+        "body": "Green belongs to A (nguồn đối chiếu), blue belongs to B (nguồn so sánh). The pairing is semantic, not aesthetic — never swap it, never reuse blue for a third concept, and never let a status hue appear without its matching label.",
+        "section": "colors"
+      },
+      {
+        "name": "The Wash Rule",
+        "body": "Status colour arrives as a low-alpha wash plus a 200-level hairline plus 700-level text. Saturated fills are reserved for badges and the export button; a full-width saturated band is out of bounds.",
+        "section": "colors"
+      },
+      {
+        "name": "The 11px Floor",
+        "body": "Operational text never goes below 11px; 10px is permitted only for a secondary annotation nested inside a row that already has an 11px line (counts in tabs, \"Gốc:\" hints). Anything smaller is unreadable on the office laptops this product targets.",
+        "section": "typography"
+      },
+      {
+        "name": "The Right-Aligned Number Rule",
+        "body": "Every amount, delta, row number, and count is right-aligned and tabular. A column of money that does not line up on the decimal is a defect, regardless of how it looks.",
+        "section": "typography"
+      },
+      {
+        "name": "The Three-Weight Rule",
+        "body": "Only 400, 500, and 600 exist. No 700 headlines, no 300 light text; weight is a hierarchy tool, not a mood.",
+        "section": "typography"
+      },
+      {
+        "name": "The Single Column Rule",
+        "body": "New sections are added as another step in the vertical work order. A sidebar, a dashboard grid of unrelated modules, or a two-column marketing layout would break the mental model of \"one desk, one task\".",
+        "section": "layout"
+      },
+      {
+        "name": "The Ring, Don't Cast Rule",
+        "body": "When a surface needs separating from its neighbour, add a hairline ring or a tonal wash first. Reach for a shadow only if the surface genuinely floats (popover, modal) or if it is the single quiet card lift described above.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Single Scrim Rule",
+        "body": "Exactly one overlay treatment exists: the modal backdrop. No dimmed hero images, no translucent panels over content, no stacked scrims.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do let the page stay grayscale until an outcome exists; colour enters with a result, a status, or the privacy promise.",
+      "Do draw new separations with a hairline ring or a dim wash before reaching for a shadow.",
+      "Do keep the four status meanings locked: green matched, amber discrepancy, rose only-in-A, sky only-in-B.",
+      "Do right-align and tabular-align every numeral, and print Δ with an explicit sign.",
+      "Do keep operational text at 11px or larger, with 1.5–1.625 line height for Vietnamese.",
+      "Do describe the privacy guarantee as a plain fact in the same voice as the rest of the UI — a shield icon, one sentence, no badge shouting.",
+      "Do keep forms in the vertical work order and pair A/B side by side only at md/lg and above."
+    ],
+    "donts": [
+      "Don't use green as a general accent, gradient source, or decorative background; it means \"verified\" and nothing else.",
+      "Don't introduce a second typeface, a serif display face, or a weight outside 400/500/600.",
+      "Don't add hover lift, scale-on-hover, drop shadows on buttons, or animated entrances for page sections.",
+      "Don't ship marketing furniture on the tool surface: testimonial blocks, pricing cards, logo walls, feature grids, or hero illustrations.",
+      "Don't colour a whole panel saturated, stack a border on a ring, or mix two corner radii on one object.",
+      "Don't build a dark theme opportunistically: a .dark token block exists in globals.css but nothing toggles it, and the shipped surface is light only.",
+      "Don't translate or restyle the interface into English; copy, sheet names, and error text are Vietnamese only."
+    ]
+  }
+}
