@@ -1,0 +1,39 @@
+# Dependencies and build artifacts are recreated inside the image.
+node_modules
+.next
+out
+coverage
+
+# Version control, CI and editor noise.
+.git
+.github
+.vscode
+.idea
+
+# Product/design documentation is not needed to compile the app.
+docs
+PRODUCT.md
+DESIGN.md
+UPDATE.md
+README.md
+RELEASE.md
+AGENTS.md
+.impeccable
+
+# Tests, sample generators and local tooling.
+tests
+scripts
+vitest.config.mts
+eslint.config.mjs
+tsconfig.tsbuildinfo
+
+# Local env files and logs.
+.env
+.env.*
+!.env.example
+*.log
+npm-debug.log*
+
+# Local Docker orchestration files do not belong in the build context.
+docker-compose.yml
+.dockerignore

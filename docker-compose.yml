@@ -1,0 +1,15 @@
+services:
+  recosheet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: recosheet:1.0.0
+    container_name: recosheet
+    init: true
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    environment:
+      NEXT_TELEMETRY_DISABLED: "1"
+    security_opt:
+      - no-new-privileges:true
