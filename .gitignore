@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# impeccable local state (keep .impeccable/design.json)
+/.impeccable/live/
+/.impeccable/critique/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
