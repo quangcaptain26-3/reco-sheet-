@@ -7,20 +7,55 @@
 
 ## 1. TỔNG QUAN PHIÊN LÀM VIỆC HIỆN TẠI (CURRENT STATE)
 
-* **Giai đoạn hiện tại (Current Phase)**: `DOCKERIZED — RELEASED READY 1.0`
-* **Task đang thực hiện (In-Progress Task)**: `Chờ chủ dự án tạo GitHub repo & push (README + RELEASE.md đã sẵn sàng)`
+* **Giai đoạn hiện tại (Current Phase)**: `PUSHED — RELEASED READY 1.0, CI đang chạy`
+* **Task đang thực hiện (In-Progress Task)**: `Chờ GitHub Actions xanh → tag v1.0.0 / deploy Vercel`
 * **Trạng thái Build & Test gần nhất**:
   * TypeScript Typecheck: `PASS — exit 0`
   * ESLint: `PASS — exit 0 (0 error, 0 warning)`
   * Vitest Suite: `PASS — 6 files / 59 tests, exit 0`
   * Next.js Build: `PASS — exit 0 (local standalone mặc định, Docker static export)`
   * Docker: `PASS — static image healthy, 20.7 MB compressed`
+  * GitHub: `PUSHED main → origin/main (public), CI run in_progress`
 * **Môi trường**: Next.js 16.4.3 App Router (TypeScript strict, Tailwind CSS v4, shadcn/ui base-nova trên Base UI, React 19.3, Node >= 22)
 * **Trạng thái Zero-Server**: `PASS — 0 API route, 0 fetch/XHR, 16 static GET, 0 POST/PUT`
 
 ---
 
 ## 2. NHẬT KÝ THỰC THI (EXECUTION LOG - MỚI NHẤT LÊN ĐẦU)
+
+### [2026-10-28 22:35] - RELEASE · Kiểm tra .gitignore, commit từng nhóm và push GitHub
+* **Người thực hiện / Agent**: Implementation Agent (DeepSeek V4.1 Flash).
+* **`.gitignore`**:
+  * Giữ chuẩn Next.js: `node_modules`, `.next`, `out`, `.env*`, `.vercel`, `*.tsbuildinfo`, `next-env.d.ts`.
+  * Thêm `/.impeccable/live/` và `/.impeccable/critique/` (state local); giữ `.impeccable/design.json` để track.
+* **Commit**: chia **19 commit** theo từng lớp, không commit gộp:
+  * `chore: ignore local impeccable state`
+  * `chore(deps): add runtime, UI and test dependencies`
+  * `chore(build): configure standalone output and client Excel bundling`
+  * `test(config): add Vitest configuration`
+  * `feat(types): define spreadsheet and reconciliation contracts`
+  * `feat(engine): add normalizer, matcher, parser and exporter`
+  * `test(engine): add engine unit tests`
+  * `feat(ui): add shadcn primitives, layout and shared components`
+  * `feat(ui): add upload, mapping, dashboard and results`
+  * `feat(hooks): add upload, reconciliation and export hooks`
+  * `feat(app): wire the four-step reconciliation wizard`
+  * `chore(samples): add demo spreadsheets and generator`
+  * `test: add fixtures, integration and release acceptance tests`
+  * `build(docker): add static nginx and standalone container setup`
+  * `ci: add GitHub Actions quality pipeline`
+  * `docs: add product truth and design system`
+  * `docs: add release checklist and project journal`
+  * `docs: add detailed README and agent skills`
+  * `docs: add product requirements, architecture and implementation plans`
+* **Push**:
+  * `git branch -M main`
+  * `git remote add origin https://github.com/quangcaptain26-3/reco-sheet-.git`
+  * `git push -u origin main` → **exit 0**, new branch `main`
+  * Remote: public repo, default branch `main`, HEAD `ad12e26`.
+  * GitHub Actions: run **CI** đang `in_progress` cho SHA `ad12e26`.
+* **Trạng thái**: working tree clean; Docker `recosheet` vẫn **healthy** tại `http://localhost:3000`.
+* **Việc tiếp theo**: chờ CI xanh → tag `v1.0.0` → deploy Vercel/Docker smoke test.
 
 ### [2026-10-28 22:24] - DOCS · README chi tiết + Checklist phát hành
 * **Người thực hiện / Agent**: Implementation Agent (DeepSeek V4.1 Flash).
