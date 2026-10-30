@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">RecoSheet — đối soát hai bảng tính Excel/CSV ngay trong trình duyệt</title>
+  <desc id="heroDesc">Minh họa hai tệp A và B được so khớp thành bốn nhóm kết quả, dữ liệu không rời khỏi máy người dùng.</desc>
+
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#fafafa"/>
+      <stop offset="1" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <linearGradient id="heroPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#202020"/>
+      <stop offset="1" stop-color="#111111"/>
+    </linearGradient>
+    <pattern id="heroDots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.2" fill="#d4d4d4"/>
+    </pattern>
+    <filter id="heroShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0a0a0a" flood-opacity="0.10"/>
+    </filter>
+    <filter id="heroSoft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="42"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="420" rx="24" fill="url(#heroBg)"/>
+  <rect x="24" y="24" width="620" height="372" rx="18" fill="url(#heroDots)" opacity="0.35"/>
+  <circle cx="1130" cy="70" r="120" fill="#a7f3d0" opacity="0.45" filter="url(#heroSoft)"/>
+  <circle cx="760" cy="390" r="100" fill="#bae6fd" opacity="0.35" filter="url(#heroSoft)"/>
+  <rect x="0.5" y="0.5" width="1279" height="419" rx="23.5" fill="none" stroke="#e5e5e5"/>
+
+  <!-- Brand -->
+  <rect x="64" y="52" width="42" height="42" rx="11" fill="#171717"/>
+  <path d="M76 70l5 5 11-11" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="95" cy="82" r="3.2" fill="#34d399"/>
+  <text x="118" y="77" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="25" font-weight="700" fill="#0a0a0a">RecoSheet</text>
+  <text x="119" y="95" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="10.5" font-weight="500" letter-spacing="1.9" fill="#737373">RECONCILIATION DESK</text>
+
+  <!-- Eyebrow -->
+  <rect x="64" y="128" width="272" height="28" rx="14" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <circle cx="80" cy="142" r="4" fill="#059669"/>
+  <text x="92" y="146" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="0.6" fill="#047857">ZERO-SERVER · 100% TRONG TRÌNH DUYỆT</text>
+
+  <!-- Headline -->
+  <text x="64" y="208" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="43" font-weight="700" letter-spacing="-1.4" fill="#0a0a0a">Đối soát hai bảng tính.</text>
+  <text x="64" y="258" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="43" font-weight="700" letter-spacing="-1.4" fill="#047857">Trong vài giây.</text>
+
+  <!-- Subcopy -->
+  <text x="64" y="294" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="15.5" fill="#525252">Tải hai tệp Excel/CSV, chọn cột khóa và giá trị. RecoSheet phân loại</text>
+  <text x="64" y="316" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="15.5" fill="#525252">4 nhóm chênh lệch và xuất một báo cáo Excel 5 sheet để bàn giao.</text>
+
+  <!-- Chips -->
+  <g font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="11.5" font-weight="500" fill="#404040">
+    <rect x="64" y="340" width="92" height="28" rx="8" fill="#ffffff" stroke="#e5e5e5"/>
+    <text x="78" y="358">O(N+M)</text>
+    <rect x="166" y="340" width="118" height="28" rx="8" fill="#ffffff" stroke="#e5e5e5"/>
+    <text x="180" y="358">Excel 5 sheet</text>
+    <rect x="294" y="340" width="124" height="28" rx="8" fill="#ffffff" stroke="#e5e5e5"/>
+    <text x="308" y="358">Δ bằng Big.js</text>
+    <rect x="428" y="340" width="106" height="28" rx="8" fill="#ffffff" stroke="#e5e5e5"/>
+    <text x="442" y="358">10MB / tệp</text>
+  </g>
+
+  <!-- File A card -->
+  <g filter="url(#heroShadow)">
+    <rect x="744" y="58" width="190" height="158" rx="12" fill="#ffffff" stroke="#e5e5e5"/>
+  </g>
+  <path d="M756 58h166a12 12 0 0 1 12 12v18H744V70a12 12 0 0 1 12-12z" fill="#f5f5f5"/>
+  <text x="758" y="80" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="600" letter-spacing="1.2" fill="#737373">TỆP A</text>
+  <text x="920" y="80" text-anchor="end" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="600" letter-spacing="0.8" fill="#0a0a0a">SỔ QUỸ</text>
+  <line x1="744" y1="88" x2="934" y2="88" stroke="#e5e5e5"/>
+
+  <g font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10.5">
+    <text x="758" y="108" fill="#404040">ORD-101</text>
+    <text x="920" y="108" text-anchor="end" fill="#0a0a0a">1.250.000</text>
+    <text x="758" y="130" fill="#404040">ORD-102</text>
+    <text x="920" y="130" text-anchor="end" fill="#0a0a0a">980.000</text>
+    <rect x="752" y="138" width="174" height="21" rx="5" fill="#fffbeb"/>
+    <rect x="752" y="138" width="3" height="21" rx="1.5" fill="#ea580c"/>
+    <text x="758" y="153" fill="#9a3412">ORD-103</text>
+    <text x="920" y="153" text-anchor="end" fill="#9a3412">2.100.000</text>
+    <text x="758" y="175" fill="#404040">ORD-104</text>
+    <text x="920" y="175" text-anchor="end" fill="#0a0a0a">450.000</text>
+    <text x="758" y="197" fill="#404040">ORD-105</text>
+    <text x="920" y="197" text-anchor="end" fill="#0a0a0a">1.500.000</text>
+  </g>
+
+  <!-- Swap badge -->
+  <circle cx="960" cy="137" r="17" fill="#171717"/>
+  <path d="M952 131h12l-3.5-3.5M968 143h-12l3.5 3.5" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- File B card -->
+  <g filter="url(#heroShadow)">
+    <rect x="986" y="58" width="190" height="158" rx="12" fill="#ffffff" stroke="#e5e5e5"/>
+  </g>
+  <path d="M998 58h166a12 12 0 0 1 12 12v18H986V70a12 12 0 0 1 12-12z" fill="#f0f9ff"/>
+  <text x="1000" y="80" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="600" letter-spacing="1.2" fill="#0369a1">TỆP B</text>
+  <text x="1162" y="80" text-anchor="end" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="600" letter-spacing="0.8" fill="#0a0a0a">SAO KÊ</text>
+  <line x1="986" y1="88" x2="1176" y2="88" stroke="#e5e5e5"/>
+
+  <g font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10.5">
+    <text x="1000" y="108" fill="#404040">ORD-101</text>
+    <text x="1162" y="108" text-anchor="end" fill="#0a0a0a">1.250.000</text>
+    <text x="1000" y="130" fill="#404040">ORD-102</text>
+    <text x="1162" y="130" text-anchor="end" fill="#0a0a0a">980.000</text>
+    <rect x="994" y="138" width="174" height="21" rx="5" fill="#fffbeb"/>
+    <rect x="994" y="138" width="3" height="21" rx="1.5" fill="#ea580c"/>
+    <text x="1000" y="153" fill="#9a3412">ORD-103</text>
+    <text x="1162" y="153" text-anchor="end" fill="#9a3412">2.055.000</text>
+    <text x="1000" y="175" fill="#404040">ORD-104</text>
+    <text x="1162" y="175" text-anchor="end" fill="#0a0a0a">495.000</text>
+    <rect x="994" y="182" width="174" height="21" rx="5" fill="#f0f9ff"/>
+    <rect x="994" y="182" width="3" height="21" rx="1.5" fill="#0369a1"/>
+    <text x="1000" y="197" fill="#075985">ORD-106</text>
+    <text x="1162" y="197" text-anchor="end" fill="#075985">700.000</text>
+  </g>
+
+  <!-- Connectors -->
+  <path d="M839 220c0 18 8 20 30 28" fill="none" stroke="#a3a3a3" stroke-width="1.4" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <path d="M1081 220c0 18-8 20-30 28" fill="none" stroke="#a3a3a3" stroke-width="1.4" stroke-dasharray="4 4" stroke-linecap="round"/>
+  <path d="M869 244l6 6-8 1z" fill="#a3a3a3"/>
+  <path d="M1051 244l-6 6 8 1z" fill="#a3a3a3"/>
+
+  <!-- Result panel -->
+  <g filter="url(#heroShadow)">
+    <rect x="795" y="258" width="330" height="126" rx="14" fill="url(#heroPanel)"/>
+  </g>
+  <text x="815" y="283" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="600" letter-spacing="1.4" fill="#a3a3a3">KẾT QUẢ ĐỐI SOÁT</text>
+  <circle cx="1105" cy="279" r="3.5" fill="#34d399"/>
+  <text x="1113" y="283" text-anchor="end" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="600" fill="#34d399">XONG</text>
+
+  <text x="815" y="318" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="27" font-weight="600" letter-spacing="-0.6" fill="#ffffff">−95.000</text>
+  <text x="815" y="335" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="9.5" letter-spacing="0.8" fill="#737373">TỔNG CHÊNH LỆCH MẪU</text>
+
+  <g font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="9.5" font-weight="600">
+    <rect x="815" y="347" width="66" height="21" rx="6" fill="#065f46" fill-opacity="0.35" stroke="#059669"/>
+    <text x="826" y="361" fill="#6ee7b7">8 khớp</text>
+    <rect x="887" y="347" width="66" height="21" rx="6" fill="#ea580c" fill-opacity="0.18" stroke="#ea580c"/>
+    <text x="898" y="361" fill="#fdba74">2 lệch</text>
+    <rect x="959" y="347" width="72" height="21" rx="6" fill="#be123c" fill-opacity="0.18" stroke="#be123c"/>
+    <text x="970" y="361" fill="#fda4af">2 chỉ A</text>
+    <rect x="1037" y="347" width="72" height="21" rx="6" fill="#0369a1" fill-opacity="0.22" stroke="#0369a1"/>
+    <text x="1048" y="361" fill="#7dd3fc">2 chỉ B</text>
+  </g>
+</svg>

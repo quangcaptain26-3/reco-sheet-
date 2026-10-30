@@ -2,6 +2,18 @@
 
 **Đối soát hai bảng tính Excel/CSV ngay trong trình duyệt — dữ liệu không rời khỏi máy bạn.**
 
+<div align="center">
+  <img src="./docs/assets/hero.svg" alt="RecoSheet — đối soát hai bảng tính Excel/CSV trong trình duyệt, dữ liệu không rời khỏi máy" width="100%" />
+  <br /><br />
+
+  <img src="https://img.shields.io/badge/tests-59%2F59-059669?style=flat-square" alt="59/59 tests" />
+  <img src="https://img.shields.io/badge/build-static%20%2B%20Docker-0369a1?style=flat-square" alt="Static + Docker build" />
+  <img src="https://img.shields.io/badge/stack-Next.js%2016.4%20%C2%B7%20React%2019.3-171717?style=flat-square" alt="Next.js 16.4 · React 19.3" />
+  <img src="https://img.shields.io/badge/zero--server-100%25%20local-059669?style=flat-square" alt="Zero-server, 100% local" />
+  <img src="https://img.shields.io/badge/release-1.0.0-ea580c?style=flat-square" alt="Release 1.0.0" />
+  <img src="https://img.shields.io/badge/license-TBD-a3a3a3?style=flat-square" alt="License TBD" />
+</div>
+
 RecoSheet giúp kế toán, vận hành và logistics so khớp hai danh sách (sổ quỹ ↔ sao kê,
 đơn hàng ↔ báo cáo đối tác, danh sách container ↔ bảng kê cước…) trong vài giây,
 phân loại rõ 4 nhóm chênh lệch và xuất một báo cáo Excel hoàn chỉnh để bàn giao.
@@ -40,10 +52,9 @@ công ty không cho phép.
 
 RecoSheet biến việc đối soát thành một quy trình 4 bước:
 
-```
-Tải 2 tệp  →  Chọn cột khóa/giá trị  →  Đối soát  →  Xem kết quả & xuất Excel
- .xlsx/.csv     key + value + dung sai     O(N+M)       4 nhóm + báo cáo 5 sheet
-```
+<div align="center">
+  <img src="./docs/assets/flow.svg" alt="Quy trình 4 bước: tải hai tệp, chọn cột khóa và giá trị, đối soát O(N+M), xem kết quả và xuất báo cáo Excel 5 sheet" width="100%" />
+</div>
 
 Mọi thứ chạy trong tab hiện tại. Đóng tab là dữ liệu biến mất — không có bản sao
 nào trên máy chủ.
@@ -112,6 +123,10 @@ Người dùng mở web, thả hai tệp và làm xong việc.
   - **Chỉ có ở B** — mã không xuất hiện ở A.
 - Hiển thị verdict tổng quan, “Thiết lập đã dùng”, 4 KPI, tổng chênh lệch và thời
   gian xử lý.
+
+<div align="center">
+  <img src="./docs/assets/verdict.svg" alt="Bốn nhóm kết quả: khớp hoàn toàn, lệch giá trị, chỉ có ở A, chỉ có ở B, kèm công thức delta và tổng chênh lệch mẫu" width="100%" />
+</div>
 
 ### Bước 4 — Xem & xuất báo cáo
 
@@ -187,27 +202,9 @@ chống formula injection.
 
 ### 4.1 Phân lớp
 
-```
-┌──────────────────────────────────────────────┐
-│ Presentation  — app/, components/           │
-│ React 19, Tailwind, shadcn/ui, Lucide       │
-└──────────────────────┬───────────────────────┘
-                       │ props / callbacks
-┌──────────────────────▼───────────────────────┐
-│ Coordination  — hooks/                       │
-│ useFileUpload, useReconciler, useExportExcel│
-└──────────────────────┬───────────────────────┘
-                       │ plain data
-┌──────────────────────▼───────────────────────┐
-│ Pure Engine   — lib/engine/                  │
-│ parser → normalizer → matcher → exporter    │
-└──────────────────────┬───────────────────────┘
-                       │ contracts
-┌──────────────────────▼───────────────────────┐
-│ Domain Types  — types/                       │
-│ spreadsheet.ts, reconciliation.ts            │
-└──────────────────────────────────────────────┘
-```
+<div align="center">
+  <img src="./docs/assets/architecture.svg" alt="Kiến trúc bốn lớp: Presentation, Coordination, Pure Engine và Domain Types, với engine thuần TypeScript chạy độc lập trong Vitest" width="100%" />
+</div>
 
 **Quy tắc bất biến:** `src/lib/engine/` là pure TypeScript — không React, không JSX,
 không hooks, không `next/*`. Engine chạy độc lập trong Vitest/CLI.
@@ -239,6 +236,7 @@ reconciler-app/
 ├── tests/                        # Fixtures + release acceptance tests
 ├── public/sample-data/           # Bộ dữ liệu mẫu
 ├── docs/                         # PRD, blueprint, architecture, tech stack
+│   └── assets/                   # Minh họa SVG dùng trong README
 ├── Dockerfile                    # Static nginx image (mặc định)
 ├── Dockerfile.standalone         # Node standalone (fallback)
 ├── docker-compose.yml
@@ -464,6 +462,10 @@ push/PR.
 
 ## 10. Bảo mật & quyền riêng tư
 
+<div align="center">
+  <img src="./docs/assets/privacy.svg" alt="Zero-server: tệp được xử lý trong trình duyệt, không upload, không lưu trữ và không telemetry nội dung" width="100%" />
+</div>
+
 - **Không có API route, Server Action hay `fetch` gửi dữ liệu tệp.**
 - `exceljs` và `file-saver` được **dynamic import** trong event handler.
 - Nginx static không có backend; network chỉ là static assets.
@@ -536,6 +538,7 @@ môi trường hay database. Docker: `docker compose up -d --build` trên VPS.
 | [`docs/implementation_plan.md`](./docs/implementation_plan.md) | Kế hoạch theo Phase |
 | [`docs/tech_stack.md`](./docs/tech_stack.md) | Thẩm định công nghệ |
 | [`docs/project_blueprint.md`](./docs/project_blueprint.md) | Blueprint tổng thể |
+| [`docs/assets/`](./docs/assets/) | Bộ minh họa SVG: hero, quy trình, kết quả, kiến trúc, zero-server |
 
 ---
 

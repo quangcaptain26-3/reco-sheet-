@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-labelledby="archTitle archDesc">
+  <title id="archTitle">Kiến trúc phân lớp của RecoSheet</title>
+  <desc id="archDesc">Bốn lớp Presentation, Coordination, Pure Engine và Domain Types, với engine thuần TypeScript chạy độc lập.</desc>
+
+  <defs>
+    <filter id="archShadow" x="-10%" y="-20%" width="120%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0a0a0a" flood-opacity="0.05"/>
+    </filter>
+    <marker id="archArrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0l8 4-8 4z" fill="#a3a3a3"/>
+    </marker>
+  </defs>
+
+  <text x="60" y="32" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1.8" fill="#737373">KIẾN TRÚC PHÂN LỚP</text>
+  <text x="1140" y="32" text-anchor="end" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#a3a3a3">Engine thuần TypeScript · không React, không next/*</text>
+
+  <!-- Layer 1 -->
+  <g filter="url(#archShadow)"><rect x="60" y="58" width="1080" height="86" rx="14" fill="#ffffff" stroke="#e5e5e5"/></g>
+  <rect x="60" y="72" width="5" height="58" rx="2.5" fill="#171717"/>
+  <text x="88" y="94" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="15.5" font-weight="600" letter-spacing="-0.2" fill="#0a0a0a">Presentation</text>
+  <text x="88" y="116" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10.5" fill="#737373">app/ · components/</text>
+  <g font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="10.5" font-weight="500">
+    <rect x="370" y="88" width="74" height="26" rx="7" fill="#f5f5f5"/><text x="383" y="105" fill="#404040">React 19</text>
+    <rect x="452" y="88" width="96" height="26" rx="7" fill="#f5f5f5"/><text x="465" y="105" fill="#404040">Tailwind v4</text>
+    <rect x="556" y="88" width="82" height="26" rx="7" fill="#f5f5f5"/><text x="569" y="105" fill="#404040">shadcn/ui</text>
+    <rect x="646" y="88" width="66" height="26" rx="7" fill="#f5f5f5"/><text x="659" y="105" fill="#404040">Lucide</text>
+  </g>
+  <text x="1116" y="105" text-anchor="end" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="11" fill="#a3a3a3">giao diện</text>
+
+  <line x1="600" y1="146" x2="600" y2="168" stroke="#a3a3a3" stroke-width="1.5" marker-end="url(#archArrow)"/>
+  <text x="614" y="163" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10" fill="#a3a3a3">props / callbacks</text>
+
+  <!-- Layer 2 -->
+  <g filter="url(#archShadow)"><rect x="60" y="174" width="1080" height="86" rx="14" fill="#ffffff" stroke="#e5e5e5"/></g>
+  <rect x="60" y="188" width="5" height="58" rx="2.5" fill="#0369a1"/>
+  <text x="88" y="210" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="15.5" font-weight="600" letter-spacing="-0.2" fill="#0a0a0a">Coordination</text>
+  <text x="88" y="232" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10.5" fill="#737373">hooks/</text>
+  <g font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="10.5" font-weight="500">
+    <rect x="370" y="204" width="108" height="26" rx="7" fill="#f0f9ff"/><text x="383" y="221" fill="#075985">useFileUpload</text>
+    <rect x="486" y="204" width="110" height="26" rx="7" fill="#f0f9ff"/><text x="499" y="221" fill="#075985">useReconciler</text>
+    <rect x="604" y="204" width="114" height="26" rx="7" fill="#f0f9ff"/><text x="617" y="221" fill="#075985">useExportExcel</text>
+  </g>
+  <text x="1116" y="221" text-anchor="end" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="11" fill="#a3a3a3">state &amp; side effects</text>
+
+  <line x1="600" y1="262" x2="600" y2="284" stroke="#a3a3a3" stroke-width="1.5" marker-end="url(#archArrow)"/>
+  <text x="614" y="279" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10" fill="#a3a3a3">plain data</text>
+
+  <!-- Layer 3 -->
+  <g filter="url(#archShadow)"><rect x="60" y="290" width="1080" height="86" rx="14" fill="#ecfdf5" stroke="#a7f3d0"/></g>
+  <rect x="60" y="304" width="5" height="58" rx="2.5" fill="#059669"/>
+  <text x="88" y="326" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="15.5" font-weight="600" letter-spacing="-0.2" fill="#065f46">Pure Engine</text>
+  <text x="88" y="348" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10.5" fill="#047857">lib/engine/</text>
+  <g font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="10.5" font-weight="500">
+    <rect x="370" y="320" width="62" height="26" rx="7" fill="#ffffff" stroke="#a7f3d0"/><text x="383" y="337" fill="#047857">parser</text>
+    <rect x="440" y="320" width="86" height="26" rx="7" fill="#ffffff" stroke="#a7f3d0"/><text x="453" y="337" fill="#047857">normalizer</text>
+    <rect x="534" y="320" width="72" height="26" rx="7" fill="#ffffff" stroke="#a7f3d0"/><text x="547" y="337" fill="#047857">matcher</text>
+    <rect x="614" y="320" width="78" height="26" rx="7" fill="#ffffff" stroke="#a7f3d0"/><text x="627" y="337" fill="#047857">exporter</text>
+    <rect x="700" y="320" width="64" height="26" rx="7" fill="#ffffff" stroke="#a7f3d0"/><text x="713" y="337" fill="#047857">Big.js</text>
+  </g>
+  <text x="1116" y="337" text-anchor="end" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" fill="#047857">chạy độc lập trong Vitest</text>
+
+  <line x1="600" y1="378" x2="600" y2="400" stroke="#a3a3a3" stroke-width="1.5" marker-end="url(#archArrow)"/>
+  <text x="614" y="395" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10" fill="#a3a3a3">contracts</text>
+
+  <!-- Layer 4 -->
+  <g filter="url(#archShadow)"><rect x="60" y="406" width="1080" height="86" rx="14" fill="#ffffff" stroke="#e5e5e5"/></g>
+  <rect x="60" y="420" width="5" height="58" rx="2.5" fill="#ea580c"/>
+  <text x="88" y="442" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="15.5" font-weight="600" letter-spacing="-0.2" fill="#0a0a0a">Domain Types</text>
+  <text x="88" y="464" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10.5" fill="#737373">types/</text>
+  <g font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="10.5" font-weight="500">
+    <rect x="370" y="436" width="108" height="26" rx="7" fill="#fffbeb"/><text x="383" y="453" fill="#9a3412">spreadsheet.ts</text>
+    <rect x="486" y="436" width="126" height="26" rx="7" fill="#fffbeb"/><text x="499" y="453" fill="#9a3412">reconciliation.ts</text>
+  </g>
+  <text x="1116" y="453" text-anchor="end" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="11" fill="#a3a3a3">hợp đồng dữ liệu</text>
+
+  <text x="600" y="512" text-anchor="middle" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="10.5" fill="#a3a3a3">Quy tắc bất biến: lib/engine/ là pure TypeScript — không React, không JSX, không hooks, không next/*</text>
+</svg>

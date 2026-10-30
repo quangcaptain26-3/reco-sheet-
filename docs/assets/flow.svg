@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 288" width="1200" height="288" role="img" aria-labelledby="flowTitle flowDesc">
+  <title id="flowTitle">Quy trình đối soát 4 bước của RecoSheet</title>
+  <desc id="flowDesc">Tải hai tệp, chọn cột khóa và giá trị, đối soát bằng hash map, xem kết quả và xuất báo cáo Excel 5 sheet.</desc>
+
+  <defs>
+    <filter id="flowShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#0a0a0a" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <text x="60" y="34" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1.8" fill="#737373">QUY TRÌNH 4 BƯỚC</text>
+  <text x="1140" y="34" text-anchor="end" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#a3a3a3">Tất cả trong một tab trình duyệt</text>
+
+  <!-- Step 1 -->
+  <g filter="url(#flowShadow)"><rect x="60" y="56" width="252" height="176" rx="14" fill="#ffffff" stroke="#e5e5e5"/></g>
+  <circle cx="84" cy="82" r="14" fill="#f5f5f5" stroke="#d4d4d4"/>
+  <text x="84" y="86.5" text-anchor="middle" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="11" font-weight="600" fill="#171717">01</text>
+  <g transform="translate(262 68)" fill="none" stroke="#0a0a0a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5"/>
+    <path d="M4 15v3.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V15"/>
+  </g>
+  <text x="84" y="132" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="17" font-weight="600" letter-spacing="-0.3" fill="#0a0a0a">Tải hai tệp</text>
+  <text x="84" y="158" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="12.5" fill="#737373">.xlsx hoặc .csv</text>
+  <text x="84" y="177" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="12.5" fill="#737373">tối đa 10MB mỗi tệp</text>
+  <rect x="84" y="196" width="128" height="22" rx="6" fill="#f5f5f5"/>
+  <text x="94" y="211" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10" fill="#525252">A + B → parsed</text>
+
+  <!-- Step 2 -->
+  <g filter="url(#flowShadow)"><rect x="336" y="56" width="252" height="176" rx="14" fill="#ffffff" stroke="#e5e5e5"/></g>
+  <circle cx="360" cy="82" r="14" fill="#f0f9ff" stroke="#bae6fd"/>
+  <text x="360" y="86.5" text-anchor="middle" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="11" font-weight="600" fill="#0369a1">02</text>
+  <g transform="translate(538 68)" fill="none" stroke="#0369a1" stroke-width="1.7" stroke-linecap="round">
+    <path d="M5 4v16M12 4v16M19 4v16"/>
+    <circle cx="5" cy="9" r="2.4" fill="#ffffff"/>
+    <circle cx="12" cy="15" r="2.4" fill="#ffffff"/>
+    <circle cx="19" cy="7" r="2.4" fill="#ffffff"/>
+  </g>
+  <text x="360" y="132" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="17" font-weight="600" letter-spacing="-0.3" fill="#0a0a0a">Chọn quy tắc</text>
+  <text x="360" y="158" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="12.5" fill="#737373">cột khóa · cột giá trị</text>
+  <text x="360" y="177" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="12.5" fill="#737373">dung sai ±X · làm sạch</text>
+  <rect x="360" y="196" width="142" height="22" rx="6" fill="#f0f9ff"/>
+  <text x="370" y="211" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10" fill="#075985">key + value + rule</text>
+
+  <!-- Step 3 -->
+  <g filter="url(#flowShadow)"><rect x="612" y="56" width="252" height="176" rx="14" fill="#ffffff" stroke="#a7f3d0"/></g>
+  <circle cx="636" cy="82" r="14" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <text x="636" y="86.5" text-anchor="middle" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="11" font-weight="600" fill="#047857">03</text>
+  <g transform="translate(814 68)" fill="none" stroke="#047857" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 7h8M4 12h6M4 17h8"/>
+    <path d="M14 15l2.5 2.5L21 13"/>
+  </g>
+  <text x="636" y="132" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="17" font-weight="600" letter-spacing="-0.3" fill="#0a0a0a">Đối soát</text>
+  <text x="636" y="158" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="12.5" fill="#737373">hash map 1-1, O(N+M)</text>
+  <text x="636" y="177" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="12.5" fill="#737373">Δ chính xác bằng Big.js</text>
+  <rect x="636" y="196" width="118" height="22" rx="6" fill="#ecfdf5"/>
+  <text x="646" y="211" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10" fill="#047857">match + delta</text>
+
+  <!-- Step 4 -->
+  <g filter="url(#flowShadow)"><rect x="888" y="56" width="252" height="176" rx="14" fill="#ffffff" stroke="#e5e5e5"/></g>
+  <circle cx="912" cy="82" r="14" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="912" y="86.5" text-anchor="middle" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="11" font-weight="600" fill="#9a3412">04</text>
+  <g transform="translate(1090 68)" fill="none" stroke="#ea580c" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="4" y="3.5" width="16" height="17" rx="2"/>
+    <path d="M4 9h16M4 14.5h16M9.5 3.5v17"/>
+  </g>
+  <text x="912" y="132" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="17" font-weight="600" letter-spacing="-0.3" fill="#0a0a0a">Xem và xuất</text>
+  <text x="912" y="158" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="12.5" fill="#737373">4 nhóm chênh lệch</text>
+  <text x="912" y="177" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="12.5" fill="#737373">báo cáo Excel 5 sheet</text>
+  <rect x="912" y="196" width="126" height="22" rx="6" fill="#fffbeb"/>
+  <text x="922" y="211" font-family="'Geist Mono', ui-monospace, Consolas, monospace" font-size="10" fill="#9a3412">report.xlsx</text>
+
+  <!-- Arrows -->
+  <g stroke="#c4c4c4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M316 144h14"/><path d="M327 140l4 4-4 4"/>
+    <path d="M592 144h14"/><path d="M603 140l4 4-4 4"/>
+    <path d="M868 144h14"/><path d="M879 140l4 4-4 4"/>
+  </g>
+
+  <text x="600" y="268" text-anchor="middle" font-family="Geist, 'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#a3a3a3">Dữ liệu chỉ nằm trong RAM của tab hiện tại — đóng tab là biến mất</text>
+</svg>
